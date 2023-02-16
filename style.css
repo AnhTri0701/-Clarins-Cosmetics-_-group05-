@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box !important;
+}
+
+body {
+    font-family: 'Passion One', cursive !important;
+}
+
+#content {
+    width: 100%;
+    min-height: 100vh;
+    background: url(https://png.pngtree.com/thumb_back/fw800/background/20210827/pngtree-cosmetics-makeup-brush-pink-background-image_768168.jpg) center/cover;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.menu_top {
+    display: flex;
+    height: 5rem;
+    align-items: center;
+    background-color: #ffffff;
+    position: relative;
+}
+
+.menu_top img {
+    width: 20px;
+    flex: 1;
+    justify-content: center;
+}
+
+.contact,
+.button,
+.menu_top ul {
+    flex: 1;
+    justify-content: center;
+}
+
+.button {
+    cursor: pointer;
+    padding: 0.8rem 0;
+}
+
+.shoppingCart {
+    overflow-y: scroll;
+    z-index: 90;
+    position: absolute;
+    width: 18rem;
+    top: 100%;
+    height: 200px;
+    right: 0;
+    /* backgrounrgb(197, 197, 186)low; */
+    background: #d4d44f;
+}
+
+p {
+    margin-bottom: 0 !important;
+}
+
+.shoppingCart img {
+    width: 50px;
+    height: 50px;
+    flex: 1;
+    border-radius: 50%;
+}
+
+.shoppingCart {
+    border: 1px solid lightblue;
+    border-radius: 10px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    background: url(https://image.freepik.com/free-vector/abstract-colorful-flow-shapes-background_23-2148258092.jpg);
+}
+
+.cart_item {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 10px;
+    border: 2px solid white;
+    padding: 0.5rem;
+    border-radius: 10px;
+    background: #00caba;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.cart_item:hover {
+    background: lightsalmon;
+}
+
+
+.cart_item img {
+    width: 50px;
+    height: 50px;
+}
+
+.button {
+    background-color: lightgrey;
+}
+
+.button:hover {
+    background-color: lightgreen;
+    border-radius: 10px;
+}
+
+.menu_top ul {
+    display: flex;
+    list-style: none;
+    margin-bottom: 0;
+}
+
+.menu_top ul li {
+    display: flex;
+    padding-left: 1rem;
+    align-items: center;
+}
+
+h3.name {
+    margin-top: 12rem;
+    color: #ffffff;
+}
+
+h3.us {
+    font-size: 2.5rem;
+}
+
+h3.us b,
+h3.name b {
+    color: #402a14
+}
+
+.btn {
+    margin-top: 2rem;
+    background: palegoldenrod !important;
+    border: 1px solid palegoldenrod !important;
+}
+
+
+
+#filter {
+    min-height: 100vh;
+    margin-top: 10rem;
+    text-align: center;
+}
+
+#input_filter {
+    padding-top: 3rem;
+}
+
+#filter-data {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 3rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    transition: 0.4s;
+}
+
+.element_cosmetics {
+    width: 340px;
+    height: 350px;
+    border: 1.5px solid #bbbb;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    margin-bottom: 3rem !important;
+    margin: auto;
+    transition: 0.4s;
+    opacity: 0.7;
+    cursor: pointer;
+    position: relative;
+}
+
+.buy {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    padding: 1rem;
+    background: lightblue;
+    border: none;
+    border-radius: 10px;
+    color: red;
+    font-size: 1rem;
+    z-index: 999;
+}
+
+.buy:hover {
+    background: burlywood;
+}
+
+.element_cosmetics:hover {
+    opacity: 1;
+}
+
+.element_cosmetics:hover .buy {
+    visibility: visible;
+}
+
+.element_cosmetics img {
+    height: 300px;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.infor {
+    height: 48px;
+    padding: 10px;
+    display: flex;
+    position: absolute;
+    width: 100%;
+    background-color: indianred;
+}
+
+.infor h1 {
+    font-size: 1.5rem;
+}
+
+.price {
+    justify-content: flex-end;
+    display: flex;
+    flex: 1;
+}
+
+.name_item {
+    justify-content: flex-start;
+    flex: 1;
+    display: flex;
+}
+
+.active {
+    background: red !important;
+}
